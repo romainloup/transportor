@@ -21,9 +21,6 @@ Le but de l'application est le calcul d'itinéraires (transports public, voiture
 Les différents trajets s'affichent sur la carte en couleur. Le bleu représente les transports publics, le rouge la marche, le jaune la voiture et le vert le vélo. La position actuelle de l'utilisateur est représentée sur la carte par un marqueur rouge "ici".
 
 
-
 --> image avec 1 trajet 3 couleurs
 
-La liste des 
-
-fonctionna
+Une autre fonction est l'affichages d'isochrones. Un isochrone est un ligne qui détermine la distance réalisable en un temps donné.
