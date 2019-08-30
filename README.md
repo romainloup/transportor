@@ -16,6 +16,12 @@ Le but de l'application est le calcul d'itinéraires (transports public, voiture
 
 -  En choissisant le nom d'un arrêt de départ et d'arrivée (des Transports Lausannois)
 -  En entrant une adresse de départ et d'arrivée. Il est possible d'écrire une adresse précise ou simplement le nom d'une localité par exemple.
--  En cliquant sue la carte ou en entrant des coordonnées.
+-  En cliquant sur la carte ou en entrant des coordonnées. Un fois un marqueur placé, il est possible de le déplacer en le glissant sur la carte. Il est aussi possible de sélectionner un arrêt en cliquant sur l'icone du bus, celle-ci deviendra verte une fois sélectionnée.
+
+Les différents trajets s'affichent sur la carte en couleur. Le bleu représente les transports publics, le rouge la marche, le jaune la voiture et le vert le vélo. La position actuelle est représentée sur la carte par un marqueur rouge "ici".
+
+--> image avec 1 trajet 3 couleurs
+
+La liste des 
 
 fonctionna
