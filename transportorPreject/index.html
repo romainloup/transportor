@@ -1,0 +1,350 @@
+<!-- projet transportor -->
+<html>
+  <head>
+  	<title>transportor</title>
+    <meta charset="utf8" />
+
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+
+    <!-- jquery & iScroll -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v3.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--  Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+      integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+      crossorigin=""></script>
+
+    <!-- Load Esri Leaflet from CDN  ajout 30 janvier -->
+    <script src="https://unpkg.com/esri-leaflet@2.2.3/dist/esri-leaflet.js"
+    integrity="sha512-YZ6b5bXRVwipfqul5krehD9qlbJzc6KOGXYsDjU9HHXW2gK57xmWl2gU6nAegiErAqFXhygKIsWPKbjLPXVb2g=="
+    crossorigin=""></script>
+
+    <!-- Load Esri Leaflet Geocoder from CDN ajout 30 janvier -->
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.css"
+    integrity="sha512-v5YmWLm8KqAAmg5808pETiccEohtt8rPVMGQ1jA6jqkWVydV5Cuz3nJ9fQ7ittSxvuqsvI9RSGfVoKPaAJZ/AQ=="
+    crossorigin="">
+    <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"
+    integrity="sha512-zdT4Pc2tIrc6uoYly2Wp8jh6EPEWaveqqD3sT0lf5yei19BC1WulGuh5CesB0ldBKZieKGD7Qyf/G0jdSe016A=="
+    crossorigin=""></script>
+
+    <!-- easyButton -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+    <!-- For polyline decoding; from https://github.com/mapbox/polyline/ -->
+    <script src="polyline.js"></script>
+
+    <!-- GeoJSON layer -->
+    <script src="stops_tp_tl2.js"></script>
+    <script src="lines/line1.js"></script>
+    <script src="lines/line2.js"></script>
+    <script src="lines/line3.js"></script>
+    <script src="lines/line4.js"></script>
+    <script src="lines/line6.js"></script>
+    <script src="lines/line7.js"></script>
+    <script src="lines/line8.js"></script>
+    <script src="lines/line9.js"></script>
+    <script src="lines/line12.js"></script>
+    <script src="lines/line13.js"></script>
+    <script src="lines/line16.js"></script>
+    <script src="lines/line17.js"></script>
+    <script src="lines/line18.js"></script>
+    <script src="lines/line21.js"></script>
+    <script src="lines/line22.js"></script>
+    <script src="lines/line23.js"></script>
+    <script src="lines/line25.js"></script>
+    <script src="lines/line29.js"></script>
+    <script src="lines/line31.js"></script>
+    <script src="lines/line32.js"></script>
+    <script src="lines/line33.js"></script>
+    <script src="lines/line36.js"></script>
+    <script src="lines/line38.js"></script>
+    <script src="lines/line41.js"></script>
+    <script src="lines/line42.js"></script>
+    <script src="lines/line45.js"></script>
+    <script src="lines/line46.js"></script>
+    <script src="lines/line47.js"></script>
+    <script src="lines/line48.js"></script>
+    <script src="lines/line49.js"></script>
+    <script src="lines/line54.js"></script>
+    <script src="lines/line60.js"></script>
+    <script src="lines/line62.js"></script>
+    <script src="lines/line64.js"></script>
+    <script src="lines/line65.js"></script>
+    <script src="lines/line67.js"></script>
+    <script src="lines/line68.js"></script>
+    <script src="lines/line69.js"></script>
+    <script src="lines/lineBus_LEB.js"></script>
+    <script src="lines/m1.js"></script>
+    <script src="lines/m2.js"></script>
+    <script src="lines/LEB.js"></script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <div id="main">
+      <div class="box">
+        <!-- Map -->
+        <div id="map" class="carte-interactive"></div>
+        <!-- Routing -->
+        <div id="info">
+        	<h2>transportor</h2>
+          <!-- Sidenav -->
+          <span class='btn btn-secondary btn-sm' onclick="openNav()">&#9776; Liste des lignes TL</span>
+          <button class="btn btn-primary btn-sm" onclick="refresh()">Tout effacer</button>
+          <br>
+          <hr>
+          <h6>Type de transport et horaire</h6>
+          <div>
+            <div class="form-check">
+              <input class="form-check-input" type=radio name="chooseTransportMode" id="radios1" value="TRANSIT,WALK" checked=checked onclick="chooseT()">
+              <label class="form-check-label" for="radios1">
+                Transports publics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type=radio name="chooseTransportMode" id="radios2" value="CAR" onclick="chooseT()">
+              <label class="form-check-label" for="radios2">
+                Voiture
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type=radio name="chooseTransportMode" id="radios3" value="BICYCLE" onclick="chooseT()">
+              <label class="form-check-label" for="radios3">
+                Vélo
+              </label>
+            </div>
+          </div>
+          <br>
+          <div class="input-group mb-3">
+            <div>
+              <label for="dayDate">Date :</label>
+              <input type="date" id="dayDate" min="2018-12-09" max="2019-12-14">
+            </div>
+            <br>
+            <div>
+              <label for="appt">Heure :</label>
+              <input id="appt" min="0:00" max="23:59" required value="00:00">
+            </div>
+            <br>
+          </div>
+          <hr>
+
+          <!-- routing functions -->
+          <!-- by stop -->
+          <p>
+            <button class="btn btn-outline-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Sélectionnez un arrêt
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <div class="form-group">
+                Départ : <input id="fromStopNameInput" list="fromStopNames" autocomplete=off placeholder="ex. Lausanne, gare">
+                <datalist id="fromStopNames"></datalist>
+              </div>
+              <div class="form-group">
+                Arrivée : <input id="toStopNameInput" list="toStopNames" autocomplete=off placeholder="ex. Lausanne-Flon">
+                <datalist id="toStopNames"></datalist>
+              </div>
+            </div>
+            <br>
+            <button class="btn btn-primary btn-sm" onclick="calculateRoute()">Calculer</button>
+          </div>
+
+          <!-- by address -->
+          <p>
+            <button class="btn btn-outline-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Entrez des adresses de départ et d'arrivée
+            </button>
+          </p>
+          <div class="collapse" id="collapse2">
+            <div class="card card-body">
+              <label>Départ :</label>
+              <div class="input-group mb-3">
+                <input type="text" style="width: 150px" id="markgeocodeA" value="Lausanne" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" onclick="calLatLngA()">OK</button>
+                </div>
+              </div>
+              <label>Arrivée :</label>
+              <div class="input-group mb-3">
+                <input type="text" style="width: 150px" id="markgeocodeB" value="Rue des Collèges, Bussigny" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" onclick="calLatLngB()">OK</button>
+                </div>
+              </div>
+            </div>
+            <br>
+            <button class="btn btn-primary btn-sm" onclick="calculateRouteAdress()">Calculer</button>
+          </div>
+          <hr>
+
+          <!-- by on click -->
+          <p>
+            <button class="btn btn-outline-primary btn-sm btn-block" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Cliquez sur la carte ou entrez des coordonnées
+            </button>
+          </p>
+          <div class="collapse" id="collapse3">
+            <div class="card card-body">
+              <div class="form-group">
+                <label for="fromPoint">Départ :</label>
+                <input type="text" style="width: 200px" class="form-control" id="fromPoint" placeholder="latitude,longitude" value="46.5093,6.6659">
+              </div>
+              <div class="form-group">
+                <label for="toPoint">Arrivée :</label>
+                <input type="text" style="width: 200px" class="form-control" id="toPoint" placeholder="latitude,longitude" value="46.5264,6.57996">
+                <small id="fromPointHelp" class="form-text text-muted">Les marqueurs peuvent ensuites être déplacés.</small>
+              </div>
+            </div>
+            <br>
+            <button class="btn btn-primary btn-sm" onclick="calculateRouteClick()" onclick="barTime()">Calculer</button>
+          </div>
+          <hr>
+
+          <!-- isochrone -->
+          <h6>Jusqu'où aller en :</h6>
+          <div class="input-group mb-3">
+            <input type="number" id="cutoff1" class="form-control" required value="30" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">minutes</span>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="number" id="cutoff2" class="form-control" required value="60" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">minutes</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="calculateIsochrone()"><span title="Un isochrone est un ligne qui détermine la distance réalisable en un temps donné.">Isochrones</span></button>
+          <button class="btn btn-primary btn-sm" onclick="cleanGIso()">X</button>
+          <hr>
+          <p id="copy">2019 © Romain Loup</p>
+        </div>
+      </div>
+
+      <!-- Left sidenav -->
+      <div class="sidenav" id="mySidenav">
+        <h2>Lignes</h2>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <table>
+          <tr>
+            <th><input type="checkbox" name="markers" id=stopMarkers checked onclick="mStopsOnOff()"> Arrêts</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" name="lines" value=0 id=line0 onclick="linesOnOff()"> 1</br></th>
+            <th><input type="checkbox" name="lines" value=1 id=line1 onclick="linesOnOff()"> 2</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=2 id=line2 onclick="linesOnOff()"> 3</br></th>
+            <th><input type="checkbox" name="lines" value=3 id=line3 onclick="linesOnOff()"> 4</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=4 id=line4 onclick="linesOnOff()"> 6</br></th>
+            <th><input type="checkbox" name="lines" value=5 id=line5 onclick="linesOnOff()"> 7</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=6 id=line6 onclick="linesOnOff()"> 8</br></th>
+            <th><input type="checkbox" name="lines" value=7 id=line7 onclick="linesOnOff()"> 9</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=8 id=line8 onclick="linesOnOff()"> 12</br></th>
+            <th><input type="checkbox" name="lines" value=9 id=line9 onclick="linesOnOff()"> 13</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=10 id=line10 onclick="linesOnOff()"> 16</br></th>
+            <th><input type="checkbox" name="lines" value=11 id=line11 onclick="linesOnOff()"> 17</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=12 id=line12 onclick="linesOnOff()"> 18</br></th>
+            <th><input type="checkbox" name="lines" value=13 id=line13 onclick="linesOnOff()"> 21</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=14 id=line14 onclick="linesOnOff()"> 22</br></th>
+            <th><input type="checkbox" name="lines" value=15 id=line15 onclick="linesOnOff()"> 23</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=16 id=line16 onclick="linesOnOff()"> 25</br></th>
+            <th><input type="checkbox" name="lines" value=17 id=line17 onclick="linesOnOff()"> 29</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=18 id=line18 onclick="linesOnOff()"> 31</br></th>
+            <th><input type="checkbox" name="lines" value=19 id=line19 onclick="linesOnOff()"> 32</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=20 id=line20 onclick="linesOnOff()"> 33</br></th>
+            <th><input type="checkbox" name="lines" value=21 id=line21 onclick="linesOnOff()"> 36</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=22 id=line22 onclick="linesOnOff()"> 38</br></th>
+            <th><input type="checkbox" name="lines" value=23 id=line23 onclick="linesOnOff()"> 41</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=24 id=line24 onclick="linesOnOff()"> 42</br></th>
+            <th><input type="checkbox" name="lines" value=25 id=line25 onclick="linesOnOff()"> 45</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=26 id=line26 onclick="linesOnOff()"> 46</br></th>
+            <th><input type="checkbox" name="lines" value=27 id=line27 onclick="linesOnOff()"> 47</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=28 id=line28 onclick="linesOnOff()"> 48</br></th>
+            <th><input type="checkbox" name="lines" value=29 id=line29 onclick="linesOnOff()"> 49</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=30 id=line30 onclick="linesOnOff()"> 54</br></th>
+            <th><input type="checkbox" name="lines" value=31 id=line31 onclick="linesOnOff()"> 60</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=32 id=line32 onclick="linesOnOff()"> 62</br></th>
+            <th><input type="checkbox" name="lines" value=33 id=line33 onclick="linesOnOff()"> 64</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=34 id=line34 onclick="linesOnOff()"> 65</br></th>
+            <th><input type="checkbox" name="lines" value=35 id=line35 onclick="linesOnOff()"> 67</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=36 id=line36 onclick="linesOnOff()"> 68</br></th>
+            <th><input type="checkbox" name="lines" value=37 id=line37 onclick="linesOnOff()"> 69</br></th>
+          </tr>
+            <th><input type="checkbox" name="lines" value=38 id=line38 onclick="linesOnOff()"> Bus-LEB</br></th>
+            <th><input type="checkbox" name="lines" value=39 id=line39 onclick="linesOnOff()"> m1</br></th>
+          <tr>
+            <th><input type="checkbox" name="lines" value=40 id=line40 onclick="linesOnOff()"> m2</br></th>
+            <th><input type="checkbox" name="lines" value=41 id=line41 onclick="linesOnOff()"> LEB</br></th>
+          </tr>
+        </table>
+      </div>
+        <div id="mySidenav2" class="sidenav2">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+          <h3>Informations</h3>
+          <h6>Heure du départ :</h6><div id = "depTime"></div>
+          <br>
+          <h6>Heure d'arrivée :</h6><div id = "arTime"></div>
+          <br>
+          <h6>Temps de trajet :</h6><div id = "travTime"></div>
+          <br>
+          <h6>Nombre de changements :</h6><div id = "nbTrans"></div>
+          <br>
+          <h6>Distance à pied : <span style="color: red;">(en rouge)</span></h6><div id = "walkDist"></div>
+          <br>
+          <h6>Liste des étapes :</h6>
+          <div id = "StopsMode"></div>
+          <hr>
+          <h6>Durée par étape</h6>
+          <svg id="chart"></svg>
+        </div>
+        <div id="tooltip" class="hidden"></div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
