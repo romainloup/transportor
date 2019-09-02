@@ -10,7 +10,7 @@ Transportor est une service de planification des déplacements en transports pub
 
 ![Alt Text](images/C1.png)
 
-Une application de cartographie s'articule évidemment autour d'une carte qui représente la majorité de l'écran. A cela s'ajoutent différentes fonctions selon la nature du problème et du public cible. Trois fond de cartes sont disponibles selon les besoins. Il peuvent être affichés en appuyant sur le bouton en haut à droite de la carte. Il est aussi possible d'afficher ou non les marqueurs représentant des arrêts en cliquant sur le menu gris "Liste des lignes TL" en haut à gauche. Ce menu déroulant permet aussi d'afficher sur la cartes les différentes lignes des TL (dont le nom s'affiche en cliquant dessus).
+Une application de cartographie s'articule évidemment autour d'une carte qui représente la majorité de l'écran. A cela s'ajoutent différentes fonctions selon la nature du problème et du public cible. Trois fonds de cartes sont disponibles selon les besoins. Ils peuvent être affichés en appuyant sur le bouton en haut à droite de la carte. Il est aussi possible d'afficher ou non les marqueurs représentant des arrêts en cliquant sur le menu gris "Liste des lignes TL" en haut à gauche. Ce menu déroulant permet aussi d'afficher sur la cartes les différentes lignes des TL (dont le nom s'affiche en cliquant dessus).
 
 Le but de l'application est le calcul d'itinéraires (transports public, voiture et vélo selon la date et l'heure). Les paramètres de calcul permettent de sélectionner des points de départ et d'arrivée de la manière suivante :
 
