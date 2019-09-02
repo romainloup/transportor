@@ -20,13 +20,13 @@ Le but de l'application est le calcul d'itinéraires (transports public, voiture
 
 Les différents trajets s'affichent sur la carte en couleur. Le bleu représente les transports publics, le rouge la marche, le jaune la voiture et le vert le vélo. La position actuelle de l'utilisateur est représentée sur la carte par un marqueur rouge "ici".
 
-![Un même trajet de Lausanne à Bussigny via 3 modes de transport différents](images/C1.png)
+![Alt Text](images/C2.png)
 
 ### Tiroir "informations"
 
 Une fois un itinéraire choisi et calculé, le tiroir informations donne des indications sur le trajet.
 
---> image boutons "infos sur..."
+![Alt Text](images/C3.png)
 
 Les informations suivantes sont disponibles :
 
@@ -38,11 +38,19 @@ Les informations suivantes sont disponibles :
 -  Liste des étapes avec une brève description
 -  Barre qui représente la durée par étape (le temps de chaque étape s'affiche en passant la souris sur la barre)
 
+Ci-dessous un trajet depuis le CHUV jusqu'à l'EPFL.
+
+![Alt Text](images/C4.png)
+
+Il est ensuite possible d'afficher les lignes concernées, ici le m2 et le m1.
+
+![Alt Text](images/C5.png)
+
 ### Isochrones
 
 Une autre fonction est l'affichages d'isochrones. Un isochrone est un ligne qui détermine la distance réalisable en un temps donné. Il est possible d'afficher deux isochrones en choississant le temps de parcours maximal. Le point de départ se sélectionne comme pour les déplacements.
 
---> image exemple isochrone
+![Alt Text](images/C6.png)
 
 ## Fonctionnement de l'application
 
