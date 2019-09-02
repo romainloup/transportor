@@ -6,7 +6,7 @@ Cette application a été crée au cours de l'année 2019 afin d'être présent�
 
 ## Comment se déplacer à Lausanne ?
 
-Transportor est une service de planification des déplacements en transports publics, en voiture et à vélo dans la région lausannoise de manière interactive en fonction d'une date et d'une heure choisies.
+Transportor est un service de planification des déplacements en transports publics, en voiture et à vélo dans la région lausannoise de manière interactive en fonction d'une date et d'une heure choisies.
 
 ![Alt Text](images/C1.png)
 
