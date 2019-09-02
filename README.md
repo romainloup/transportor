@@ -22,7 +22,7 @@ Les différents trajets s'affichent sur la carte en couleur. Le bleu représente
 
 --> image avec 1 trajet 3 couleurs
 
-## Tiroir "informations"
+### Tiroir "informations"
 
 Une fois un itinéraire choisi et calculé, le tiroir informations donne des indications sur le trajet.
 
@@ -38,7 +38,7 @@ Les informations suivantes sont disponibles :
 -  Liste des étapes
 -  Barre qui représente la durée par étape (le temps de chaque étape s'affiche en passant la souris sur la barre)
 
-## Isochrones
+### Isochrones
 
 Une autre fonction est l'affichages d'isochrones. Un isochrone est un ligne qui détermine la distance réalisable en un temps donné. Il est possible d'afficher deux isochrones en choississant le temps de parcours maximal. Le point de départ se sélectionne comme pour les déplacements.
 
