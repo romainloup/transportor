@@ -62,5 +62,18 @@ Les éléments de routing proviennent d'[Open Street Planer](https://www.opentri
 
 ### Mise en place du serveur
 
-Afin de faire tourner l'application, il faut lancer un serveur de routing. Un serveur de routing OPT fonctionne avec Java et doit être implémenté par quelques lignes de code. Il est possible de faire tourner un serveur de différentes manières. Premièrement, créer un serveur OPT de toutes pièces. Pour cela, il faut suivre le [tutoriel](http://docs.opentripplanner.org/en/latest/Basic-Tutorial/) OTP pour l'installation d'un serveur afin de créer son propre fichier Graph.obj. Ce type de fichier et l'agrégation d'un fichier GTFS et du système de routes d'un lieu donné. Ce processus est très gourmand en RAM pour un fichier de la taille de la Suisse comme pour cette application. L'avantage est qu'il est possible de choisir sa propre région de calcul.
-Une autre possibilité est donc d'utiliser le fichier Graph.obj réalisé pour cette application.
+Afin de faire tourner l'application, il faut lancer un serveur de routing. Un serveur de routing OPT fonctionne avec Java et doit être implémenté par quelques lignes de code. Il est possible de faire tourner un serveur de différentes manières. Premièrement, créer un serveur OPT de toutes pièces. Pour cela, il faut suivre le [tutoriel](http://docs.opentripplanner.org/en/latest/Basic-Tutorial/) OTP pour l'installation d'un serveur afin de créer son propre fichier Graph.obj. Ce type de fichier et l'agrégation d'un fichier GTFS et du système de routes d'un lieu donné. Les GTFS de la Suisse (et ailleurs) sont disponibles [ici](http://transitfeeds.com) et le fichier des routes Open Street Map est disponible [ici](http://download.geofabrik.de). Ce processus est très gourmand en RAM pour un fichier de la taille de la Suisse comme pour cette application. L'avantage est qu'il est possible de choisir sa propre région de calcul.
+
+Une autre possibilité est donc d'utiliser le fichier Graph.obj réalisé pour cette application diponible ici METTRE LE LIEN SWITCH. Il doit être placé dans le dossier suivant : /Users/yourUserName/otpServ/graphs/default. Il suffit du coup d'éxécuter le script R suivant ici LIEN en remplaçant 'yourUserName' par votre nom d'utilisateur et d'éxécuter le script.
+
+Le server s'ouvre par défaut sur le port localhost:8080. Si ce port est déjà utilisé, il est possible d'en choisir un autre en le spécifiant dans le script R.
+
+## Public cible
+
+Cette application s'adresse à toutes personnes qui voudraient se déplacer en région lausannoise. Il est néanmoins possible de faire une requête sur toute la Suisse. Il est important que les utilisateurs doivent puissent trouver les informations recherchées facilement. Cette application pourrait facilement être adaptée pour n'importe quelle région du monde disposant de fichiers GTFS.
+
+## Sources
+
+---------
+
+Copyright © 2019 - Romain Loup
