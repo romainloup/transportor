@@ -44,6 +44,12 @@ Une autre fonction est l'affichages d'isochrones. Un isochrone est un ligne qui 
 
 --> image exemple isochrone
 
-## Fonctionnement
+## Fonctionnement de l'application
 
-## 
+L'utilisation de l'application demande une certaine préparation car il utilise un serveur.
+
+### Données
+
+Différents types de données ont été utilisées pour cette application.
+
+Tout d'abors les arrêts de transports publics représentés par des bus bleus proviennent d'un fichier [GTSF](https://developers.google.com/transit/gtfs/reference/?hl=fr) 
