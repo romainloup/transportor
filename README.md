@@ -50,6 +50,14 @@ L'utilisation de l'application demande une certaine préparation car il utilise 
 
 ### Données
 
-Différents types de données ont été utilisées pour cette application.
+Différents types de données ont été utilisées pour cette application, dont certaines propres à l'application et d'autres issues directement d'un serveur de routing.
+
+#### Données propres à l'applications
 
 Tout d'abors, les arrêts de transports publics représentés par des bus bleus et l'affichage des lignes proviennent d'un fichier [GTSF](https://developers.google.com/transit/gtfs/reference/?hl=fr). Les arrêts sont simplements issus des coordonnées du fichier "stops.txt" alors que les lignes ont été crées à l'aide du logiciel R. Ce script R relie les arrêts grâce à un serveur de routing qui lie les points de la façon la plus courte par la route et utilise les trajets à pied pour les trajets de bus qui passent dans des zones interdites aux voitures. Les lignes M1, M2 et LEB sont issues d'un fond de carte OFT des voies ferrées.
+
+#### Données de routing
+
+Les éléments de routing proviennent d'[Open Street Planer](https://www.opentripplanner.org)
+
+### Mise en place du serveur
