@@ -8,7 +8,7 @@ Cette application a été crée au cours de l'année 2019 afin d'être présent�
 
 Transportor est une service de planification des déplacements en transports publics, en voiture et à vélo dans la région lausannoise de manière interactive en fonction d'une date et d'une heure choisies.
 
--> image application générale
+![Alt Text](images/C1.png)
 
 Une application de cartographie s'articule évidemment autour d'une carte qui représente la majorité de l'écran. A cela s'ajoutent différentes fonctions selon la nature du problème et du public cible. Trois fond de cartes sont disponibles selon les besoins. Il peuvent être affichés en appuyant sur le bouton en haut à droite de la carte. Il est aussi possible d'afficher ou non les marqueurs représentant des arrêts en cliquant sur le menu gris "Liste des lignes TL" en haut à gauche. Ce menu déroulant permet aussi d'afficher sur la cartes les différentes lignes des TL (dont le nom s'affiche en cliquant dessus).
 
