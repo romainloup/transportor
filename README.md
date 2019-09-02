@@ -58,6 +58,9 @@ Tout d'abors, les arrêts de transports publics représentés par des bus bleus 
 
 #### Données de routing
 
-Les éléments de routing proviennent d'[Open Street Planer](https://www.opentripplanner.org)
+Les éléments de routing proviennent d'[Open Street Planer](https://www.opentripplanner.org) (OTP). C'est à partir des données issues du calculs des itinéraires que les différentes visualisations sont possibles.
 
 ### Mise en place du serveur
+
+Afin de faire tourner l'application, il faut lancer un serveur de routing. Un serveur de routing OPT fonctionne avec Java et doit être implémenté par quelques lignes de code. Il est possible de faire tourner un serveur de différentes manières. Premièrement, créer un serveur OPT de toutes pièces. Pour cela, il faut suivre le [tutoriel](http://docs.opentripplanner.org/en/latest/Basic-Tutorial/) OTP pour l'installation d'un serveur afin de créer son propre fichier Graph.obj. Ce type de fichier et l'agrégation d'un fichier GTFS et du système de routes d'un lieu donné. Ce processus est très gourmand en RAM pour un fichier de la taille de la Suisse comme pour cette application. L'avantage est qu'il est possible de choisir sa propre région de calcul.
+Une autre possibilité est donc d'utiliser le fichier Graph.obj réalisé pour cette application.
