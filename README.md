@@ -20,7 +20,7 @@ Le but de l'application est le calcul d'itinéraires (transports public, voiture
 
 Les différents trajets s'affichent sur la carte en couleur. Le bleu représente les transports publics, le rouge la marche, le jaune la voiture et le vert le vélo. La position actuelle de l'utilisateur est représentée sur la carte par un marqueur rouge "ici".
 
---> image avec 1 trajet 3 couleurs
+![Un même trajet de Lausanne à Bussigny via 3 modes de transport différents](images/C1.png)
 
 ### Tiroir "informations"
 
