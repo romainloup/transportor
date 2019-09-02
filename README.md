@@ -74,7 +74,7 @@ Afin de faire tourner l'application, il faut lancer un serveur de routing. Un se
 
 Une autre possibilité est donc d'utiliser le fichier Graph.obj réalisé pour cette application diponible ici METTRE LE LIEN SWITCH. Il doit être placé dans le dossier suivant : /Users/yourUserName/otpServ/graphs/default. Il suffit du coup d'éxécuter le script R suivant ici LIEN en remplaçant 'yourUserName' par votre nom d'utilisateur et d'éxécuter le script.
 
-Le server s'ouvre par défaut sur le port localhost:8080. Si ce port est déjà utilisé, il est possible d'en choisir un autre en le spécifiant dans le script R.
+Le server s'ouvre par défaut sur le port 'localhost:8080'. Si ce port est déjà utilisé, il est possible d'en choisir un autre en le spécifiant dans le script R.
 
 ## Public cible
 
