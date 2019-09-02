@@ -74,6 +74,10 @@ Cette application s'adresse à toutes personnes qui voudraient se déplacer en r
 
 ## Sources
 
+- Fonds de carte : Open Street Map, disponible en ligne : https://www.openstreetmap.org/
+- Fichiers GTFS : Transit Feeds, disponible en ligne : http://transitfeeds.com/
+- Système des routes : Geofabrik, disponible en ligne : http://download.geofabrik.de/
+
 ---------
 
 Copyright © 2019 - Romain Loup
