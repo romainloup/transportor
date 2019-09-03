@@ -70,11 +70,12 @@ Les éléments de routing proviennent d'[Open Street Planer](https://www.opentri
 
 ## Mise en place de l'application
 
+"Version simple en dessous"
 Afin de faire tourner l'application, il faut lancer un serveur de routing. Un serveur de routing OPT fonctionne avec Java et doit être implémenté par quelques lignes de code. Il est possible de faire tourner un serveur de différentes manières. Premièrement, créer un serveur OPT de toutes pièces. Pour cela, il faut suivre le [tutoriel](http://docs.opentripplanner.org/en/latest/Basic-Tutorial/) OTP pour l'installation d'un serveur afin de créer son propre fichier Graph.obj. Ce type de fichier et l'agrégation d'un fichier GTFS et du système de routes d'un lieu donné. Les GTFS de la Suisse (et ailleurs) sont disponibles [ici](http://transitfeeds.com) et le fichier des routes Open Street Map est disponible [ici](http://download.geofabrik.de). Ce processus est très gourmand en RAM pour un fichier de la taille de la Suisse comme pour cette application. L'avantage est qu'il est possible de choisir sa propre région de calcul.
 
-Une autre possibilité est donc d'utiliser le fichier Graph.obj ainsi que le fichier du serveur réalisés pour cette application diponibles [ici](https://drive.switch.ch/index.php/s/81Jxwdj6mc94cle). Il suffit du coup d'éxécuter le [script R](setRouterOTP.R) en remplaçant 'yourUserName' par votre nom d'utilisateur et d'éxécuter le script. Faire attention à ce que les chemins d'accès correspondent toujours.
-
 ### Marche à suivre (version simple)
+Une autre possibilité est donc d'utiliser le fichier Graph.obj ainsi que le fichier du serveur réalisés pour cette application diponibles . Il suffit du coup d'éxécuter le script R 'setRouterOTP.R' puis d'ouvir le fichier 'index.html' dans un navigateur. Pour l'installation, suivre les points ci-dessous :
+
 1. Télécharger le dossier "transportorProject" disponible sur ce GitHub.
 2. Télécharger le dossier "otpServ" disponible [ici](https://drive.switch.ch/index.php/s/81Jxwdj6mc94cle).
 3. Placer le dossier "otpServ" dans le dossier utilisateur. (Chemin d'accès Mac : /Users/yourUserName/otpServ, chemin d'accès Windows : C:\Users\yourUserName\otpServ)
