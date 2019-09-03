@@ -77,8 +77,8 @@ Afin de faire tourner l'application, il faut lancer un serveur de routing. Un se
 Une autre possibilité est donc d'utiliser le fichier Graph.obj ainsi que le fichier du serveur réalisés pour cette application diponibles . Il suffit du coup d'éxécuter le script R 'setRouterOTP.R' puis d'ouvir le fichier 'index.html' dans un navigateur. Pour l'installation, suivre les points ci-dessous :
 
 1. Télécharger le dossier "transportorProject" disponible sur ce GitHub.
-2. Télécharger le dossier "otpServ" disponible [ici](https://drive.switch.ch/index.php/s/81Jxwdj6mc94cle) et l'extraire.
-3. Placer le dossier "otpServ" dans le dossier utilisateur. (Chemin d'accès Mac : /Users/yourUserName/otpServ, chemin d'accès Windows : C:\Users\yourUserName\otpServ)
+2. Télécharger le dossier "otpServ" disponible [ici](https://drive.switch.ch/index.php/s/81Jxwdj6mc94cle) en appuyant sur le bouton "télécharger" en haut à droite.
+3. Extraire et placer le dossier "otpServ" dans le dossier utilisateur. (Chemin d'accès Mac : /Users/yourUserName/otpServ, chemin d'accès Windows : C:\Users\yourUserName\otpServ)
 4. Ouvrir le script R "setRouterOTP.R" disponible dans le dossier "transportorProject" et changer le nom "yourUserName" en votre nom d'utilisateur. Le server s'ouvre par défaut sur le port 'localhost:8080'. Si ce port est déjà utilisé, il est possible d'en choisir un autre en le spécifiant dans le script R.
 5. Exécuter le script R, le serveur devrait être opérationnel
 6. Ouvrir le fichier "index.html" dans un navigateur Internet et commencer à utiliser l'application.
