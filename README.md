@@ -76,7 +76,8 @@ Une autre possibilité est donc d'utiliser le fichier Graph.obj ainsi que le fic
 
 Le server s'ouvre par défaut sur le port 'localhost:8080'. Si ce port est déjà utilisé, il est possible d'en choisir un autre en le spécifiant dans le script R.
 
-1. test
+### Marche à suivre
+1. Télécharger le dossier "transportorProject" disponible [ici](transportorProject)
 2. test2
 
 ## Public cible
