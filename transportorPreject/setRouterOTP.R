@@ -8,5 +8,5 @@ library(opentripplanner)
 # Set the server
 otp = paste0(getwd(), "/otp-1.4.0-shaded.jar")
 graphdir <- paste0(getwd(), "/graphs/default")
-# Allocate the RAM (in Mo) and set the name of the router, possible to allocate less
-otp_setup(otp, getwd(), memory = 8000, router = "default") # sossible to change the port adding 'port = 8081' before the last bracket
+# Allocate the RAM (in Mo) and set the name of the router, possible to allocate less memory
+otp_setup(otp, getwd(), memory = 8000, router = "default") # possible to change the port adding 'port = 8081' before the last bracket
