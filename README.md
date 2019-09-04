@@ -2,7 +2,7 @@
 
 ### Informations sur les déplacements en région lausannoise
 
-Cette application a été crée au cours de l'année 2019 afin d'être présentée pour le cours de *Visualisation de données* donné par Isaac Pante à l'Université de Lausanne.
+Cette application a été crée au cours de l'année 2019 afin d'être présentée pour le cours de *Visualisation de données* donné par Isaac Pante à l'Université de Lausanne. La marche à suivre pour l'installation est disponible plus bas.
 
 ## Comment se déplacer à Lausanne ?
 
@@ -10,13 +10,13 @@ Transportor est un service de planification des déplacements en transports publ
 
 ![Alt Text](images/C1.png)
 
-Une application de cartographie s'articule évidemment autour d'une carte qui représente la majorité de l'écran. A cela s'ajoutent différentes fonctions selon la nature du problème et du public cible. Trois fonds de cartes sont disponibles selon les besoins. Ils peuvent être affichés en appuyant sur le bouton en haut à droite de la carte. Il est aussi possible d'afficher ou non les marqueurs représentant des arrêts en cliquant sur le menu gris "Liste des lignes TL" en haut à gauche. Ce menu déroulant permet aussi d'afficher sur la cartes les différentes lignes des TL (dont le nom s'affiche en cliquant dessus).
+Ce projet consiste en une application de cartographie qui s'articule autour d'une carte qui occupe la majorité de l'écran. Différentes fonctions permettant de planifier les déplacements sont offertes par l'application et trois fonds de cartes sont disponibles selon la vue souhaitée. Ils peuvent être affichés en appuyant sur le bouton en haut à droite de la carte. Il est aussi possible d'afficher ou non les marqueurs représentant des arrêts en cliquant sur le menu gris "Liste des lignes TL" en haut à gauche. Ce menu déroulant permet aussi d'afficher sur la cartes les différentes lignes des TL (dont le nom s'affiche en cliquant dessus).
 
-Le but de l'application est le calcul d'itinéraires (transports public, voiture et vélo selon la date et l'heure). Les paramètres de calcul permettent de sélectionner des points de départ et d'arrivée de la manière suivante :
+Le but de l'application est le calcul d'itinéraires (transports public, voiture et vélo selon la date et l'heure). Les paramètres de calcul permettent de sélectionner des points de départ et d'arrivée des manières suivantes :
 
--  En choissisant le nom d'un arrêt de départ et d'arrivée (des Transports Lausannois)
--  En entrant une adresse de départ et d'arrivée. Il est possible d'écrire une adresse précise ou simplement le nom d'une localité par exemple.
--  En cliquant sur la carte ou en entrant des coordonnées. Un fois un marqueur placé, il est possible de le déplacer en le glissant sur la carte. Il est aussi possible de sélectionner un arrêt en cliquant sur l'icone du bus, celle-ci deviendra verte une fois sélectionnée.
+-  En choissisant le nom d'un arrêt de départ et d'arrivée (des Transports Lausannois uniquement)
+-  En entrant une adresse de départ et d'arrivée. Il est possible d'écrire une adresse précise ou simplement le nom d'une localité par exemple (fonctionne pout toute la Suisse).
+-  En cliquant sur la carte ou en entrant des coordonnées (fonctionne pout toute la Suisse). Un fois un marqueur placé, il est possible de le déplacer en le glissant sur la carte. Il est aussi possible de sélectionner un arrêt en cliquant sur l'icone du bus, celle-ci deviendra verte une fois sélectionnée.
 
 Les différents trajets s'affichent en couleur sur la carte. Le bleu représente les transports publics, le rouge la marche, le jaune la voiture et le vert le vélo. La position actuelle de l'utilisateur est représentée sur la carte par un marqueur rouge "ici".
 
@@ -51,6 +51,14 @@ Il est ensuite possible d'afficher les lignes concernées, ici le m2 et le m1.
 Une autre fonction est l'affichages d'isochrones. Un isochrone est un ligne qui détermine la distance réalisable en un temps donné. Il est possible d'afficher deux isochrones en choississant le temps de parcours maximal. Le point de départ se sélectionne comme pour les déplacements.
 
 ![Alt Text](images/C6.png)
+
+Il est aussi possbile de comparer l'accessibilité d'un lieu pour différents moyens de transports comme ci-dessous. Il est possible de voir que cette localité est très bien desservie par la route mais que les transports publics sont moins efficaces. Les déplacements en vélo dépendent eux principalement de la distance.
+
+![Alt Text](images/C7.png)
+
+![Alt Text](images/C8.png)
+
+![Alt Text](images/C9.png)
 
 ## Fonctionnement de l'application
 
