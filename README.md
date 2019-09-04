@@ -52,7 +52,7 @@ Une autre fonction est l'affichages d'isochrones. Un isochrone est un ligne qui 
 
 ![Alt Text](images/C6.png)
 
-Il est aussi possbile de comparer l'accessibilité d'un lieu pour différents moyens de transports comme ci-dessous. Il est possible de voir que cette localité est très bien desservie par la route mais que les transports publics sont moins efficaces. Les déplacements en vélo dépendent eux principalement de la distance.
+Il est aussi possbile de comparer l'accessibilité d'un lieu pour différents moyens de transports comme ci-dessous. Il est possible de voir que cette localité est très bien desservie par la route mais que les transports publics sont moins efficaces. Les déplacements en vélo dépendent eux principalement de la distance. Il s'agit ici des isochrones 30 et 60 minutes pour le village Sullens.
 
 ![Alt Text](images/C7.png)
 
